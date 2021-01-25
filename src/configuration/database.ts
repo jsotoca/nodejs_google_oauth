@@ -28,7 +28,7 @@ export default class MySQL {
         return this.instance._cnn;
     }
 
-    public static doQuery(query: string, values: any[]){
+    public static doQuery(query: string, values: any){
         return new Promise((resolve,reject) => {
             this.instance._cnn.query(
                 query,
